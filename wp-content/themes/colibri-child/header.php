@@ -11,7 +11,7 @@
 </head>
 
 <body id="colibri" <?php body_class(); ?>>
-<p>Hej med dig</p>
+
 <?php
 if ( function_exists( 'wp_body_open' ) ) {
     wp_body_open();
