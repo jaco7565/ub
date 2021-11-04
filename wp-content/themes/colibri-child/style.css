@@ -1,7 +1,7 @@
 /* 
 Theme Name:    Colibri child
 Template:    colibri-wp
-Version:      1.0.0
+Version:      1.1.0
 Description:  Colibri WP Child Theme
 Author:     Jacob Salah Knudsen
 */
@@ -16,7 +16,7 @@ Author:     Jacob Salah Knudsen
 }
 
 .page-footer.h-footer-parallax {
-  background-color: black;
+  background-color: #325b5d;
   position: fixed;
   bottom: 0;
   left: 0;
