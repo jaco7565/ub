@@ -7,6 +7,8 @@
     <link rel ="stylesheet" href ="style.css">
     <?php wp_head(); ?>
     <?php colibriwp_theme()->get( 'css' )->render(); ?>
+   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/custom.css">
+   
     
 </head>
 
@@ -21,4 +23,4 @@ if ( function_exists( 'wp_body_open' ) ) {
 ?>
 <div class="site" id="page-top">
     <?php colibriwp_theme()->get( 'header' )->render(); ?>
-
+ 
