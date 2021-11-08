@@ -4,7 +4,7 @@
 
 <template>
 	<article class="kurser">
-      <h4></h4>
+       <h4></h4>
           <img class="kursus_img" src="" alt="" />
           <p class="details"></p>
           <p class="pris"></p>
@@ -62,7 +62,7 @@ function visKurser() {
     kurser.forEach((kursus) => {
 
 
-        if (kursus.categories.includes(9)) {
+        if (kursus.categories.includes(11)) {
 
         //Er filter det samme som objekt? || betyder eller
         //Bestemt kategori eller alle objekter

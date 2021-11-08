@@ -1,26 +1,7 @@
 /* 
 Theme Name:    Colibri child
 Template:    colibri-wp
-Version:      1.1.0
+Version:      1.2.0
 Description:  Colibri WP Child Theme
 Author:     Jacob Salah Knudsen
 */
-
-#colibri .h-navigation_sticky .style-195,
-#colibri .h-navigation_sticky.style-195 {
-  background-color: #325b5d;
-  background-image: none;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 50%);
-}
-
-.page-footer.h-footer-parallax {
-  background-color: #325b5d;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  color: white;
-}

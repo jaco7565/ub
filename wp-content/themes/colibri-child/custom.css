@@ -11,8 +11,139 @@
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-img {
+.kurser img {
   aspect-ratio: 16/9;
   height: auto;
   width: 100%;
+  object-fit: cover;
+}
+
+.kurser {
+  cursor: pointer;
+}
+
+#colibri .h-navigation_sticky .style-195,
+#colibri .h-navigation_sticky.style-195 {
+  background-color: #325b5d;
+  background-image: none;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  box-shadow: 0px 0px 4px 0px rgb(0 0 0 / 50%);
+}
+
+#colibri .style-195 {
+  animation-duration: 0.5s;
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  background-color: #325b5d;
+  background-image: none;
+}
+
+.page-footer.h-footer-parallax {
+  position: static;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #325b5d;
+}
+#footer {
+  background-color: #325b5d;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.info_social {
+  display: flex;
+  flex-direction: column;
+  padding-left: 27px;
+  padding-top: 33px;
+}
+.info h4 {
+  color: white;
+}
+.info p {
+  color: white;
+}
+.nyhedsbrev {
+  display: flex;
+  flex-direction: column;
+  padding-top: 33px;
+  padding-left: 18%;
+}
+.nyhedsbrev h4 {
+  color: white;
+}
+.social_media img {
+  max-width: 2rem;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.social_media h4 {
+  color: white;
+}
+.verdensmol p {
+  padding-left: 43px;
+  color: white;
+}
+.verdensmol img {
+  height: auto;
+  object-fit: cover;
+  max-width: 14rem;
+  margin-left: 6rem;
+}
+.contaioner_form {
+  display: inline-block;
+  width: 220px;
+  text-align: left;
+}
+
+#tilmeld_knap {
+  background-color: #fbc41f;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+#email {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #0b0505;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+#fname {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #0b0505;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+#lname {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #0b0505;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 5px 30px;
+  text-decoration: none;
 }

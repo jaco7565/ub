@@ -62,7 +62,7 @@ function visKurser() {
     kurser.forEach((kursus) => {
 
 
-        if (kursus.categories.includes(9)) {
+        if (kursus.categories.includes(3)) {
 
         //Er filter det samme som objekt? || betyder eller
         //Bestemt kategori eller alle objekter
