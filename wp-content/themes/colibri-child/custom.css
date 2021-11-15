@@ -1,4 +1,157 @@
-#content .container {
+//Forside
+
+.h-row .style-1377 {
+	width: 15rem;
+	height: 15rem;
+	border: none;
+}
+
+.valgt_info h3 {
+	color: #325b5d;
+	font-size: 1rem;
+}
+
+#velkom_h1 {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+	margin-top: 3rem;
+}
+
+.menu {
+	margin: auto;
+	width: 77%;
+	padding: 10px:
+	
+}
+
+.kurser_single {
+	margin: 1rem;
+}
+
+.valgt_info {
+display: flex;
+gap: 15px;
+}
+
+.ins {
+	display: flex;
+	gap: 20px;
+	cursor: pointer;
+	margin-top: 5rem;
+}
+
+.tem {
+	display: flex;
+	gap: 20px;
+	cursor: pointer;
+}
+
+#trekant, #trekant1 {
+  box-sizing: border-box;
+  height: 1rem;
+  width: 1rem;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 0px 8px 8px 0px;
+  transform: rotate(45deg);
+  transition: ease-out 250ms;
+  margin-top: 1rem;
+}
+
+
+#indhold-filtrering {
+	margin-bottom: 0.3rem;
+	display: flex;
+	gap: 0.5rem;
+}
+
+#filtrering {
+	display: flex;
+	gap: 0.5rem; 
+	margin-bottom: 0.3rem;
+}
+
+#indhold-filtrering .filter, #filtrering .filter, #back_nav #tilbage{
+	text-align: center;
+    background-color: #325B5D;
+    background-image: none;
+    font-family: Open Sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    cursor: pointer;
+    transition: 250ms ease;
+    align-self: center;
+}
+
+
+
+#filtrering .filter:hover, #back_nav #tilbage:hover,
+#indhold-filtrering .filter:hover{
+	background-color: rgb(255, 123, 15);
+}
+
+
+#filtrering .valgt {
+	text-align: center;
+    background-color: rgb(255, 123, 15);
+    background-image: none;
+    font-family: Open Sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    cursor: pointer;
+    transition: 250ms ease;
+    align-self: center;
+}
+
+#indhold-filtrering .valgt {
+	text-align: center;
+    background-color: rgb(255, 123, 15);
+    background-image: none;
+    font-family: Open Sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    cursor: pointer;
+    transition: 250ms ease;
+    align-self: center;
+}
+
+#content, .content {
+	box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+  #content .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2rem;
@@ -6,10 +159,35 @@
   margin: 2rem;
   border-radius: 0.5rem;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
 }
+
+#content .container .kurser  {
+	transition: 250ms ease;
+	padding: 1rem;
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 2px 8px 26px;
+	
+}
+
+#content .container .kurser:hover {
+	background-color: #f3f3f3;
+	
+}
+
+body p {color: black;}
+
+
+.boks_title{
+	color: white;
+	font-size: 1.5rem;
+}
+
+.txtboks {padding: 3rem;}
+
 
 .kurser img {
   aspect-ratio: 16/9;
@@ -21,6 +199,12 @@
 .kurser {
   cursor: pointer;
 }
+
+.txtboks {background-color: #325b5d;
+color: white;
+width: 25rem;
+height: 25rem;
+align-content: center;}
 
 #colibri .h-navigation_sticky .style-195,
 #colibri .h-navigation_sticky.style-195 {
@@ -44,106 +228,251 @@
   background-image: none;
 }
 
-.page-footer.h-footer-parallax {
-  position: static;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #325b5d;
-}
+
+
 #footer {
   background-color: #325b5d;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
-.info_social {
-  display: flex;
-  flex-direction: column;
-  padding-left: 27px;
-  padding-top: 33px;
+#footer h4{
+font-weight: bold;
 }
-.info h4 {
+
+#colibri .style-62 {
+	display: none;
+}
+
+
+.info{
+  margin-top: 0.5rem;
+}
+
+#footer p {
   color: white;
 }
-.info p {
-  color: white;
-}
-.nyhedsbrev {
-  display: flex;
-  flex-direction: column;
-  padding-top: 33px;
-  padding-left: 18%;
-}
-.nyhedsbrev h4 {
-  color: white;
-}
+
 .social_media img {
-  max-width: 2rem;
-  height: auto;
-  width: 100%;
-  object-fit: cover;
+  width:  2rem;
+  height: 2rem;
+  background-size: cover;
 }
-.social_media h4 {
+
+#footer h4 {
   color: white;
 }
+
+.verdensmol {
+ text-align: center;
+}
+
+.verdensmol #p_udvikling {
+	font-weight: bold;
+}
+
 .verdensmol p {
-  padding-left: 43px;
+  text-align: center;
   color: white;
 }
 .verdensmol img {
   height: auto;
   object-fit: cover;
   max-width: 14rem;
-  margin-left: 6rem;
-}
-.contaioner_form {
-  display: inline-block;
-  width: 220px;
-  text-align: left;
+ 
 }
 
-#tilmeld_knap {
-  background-color: #fbc41f;
-  border-radius: 10px;
+input[type=text], select {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Arial;
-  font-size: 16px;
-  padding: 5px 30px;
-  text-decoration: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
-#email {
-  background-color: white;
-  border-radius: 10px;
-  display: inline-block;
-  cursor: pointer;
-  color: #0b0505;
-  font-family: Arial;
-  font-size: 16px;
-  padding: 5px 30px;
-  text-decoration: none;
+
+input[type=submit] {
+  
+  text-align: center;
+    background-color: rgb(255, 123, 15);
+    background-image: none;
+    font-family: Open Sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    cursor: pointer;
+    transition: 250ms ease;
+    align-self: center;
+	margin-bottom: 2rem;
 }
-#fname {
-  background-color: white;
-  border-radius: 10px;
-  display: inline-block;
-  cursor: pointer;
-  color: #0b0505;
-  font-family: Arial;
-  font-size: 16px;
-  padding: 5px 30px;
-  text-decoration: none;
+
+.kurser button {
+text-align: center;
+background-color: rgb(255, 123, 15);
+background-image: none;
+font-family: Open Sans;
+font-weight: 600;
+text-transform: uppercase;
+font-size: 12px;
+line-height: 1;
+letter-spacing: 1px;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding-top: 12px;
+padding-right: 24px;
+padding-bottom: 12px;
+padding-left: 24px;
+cursor: pointer;
+transition: 250ms ease;
+	align-self: center;
+
+	
 }
-#lname {
-  background-color: white;
-  border-radius: 10px;
-  display: inline-block;
-  cursor: pointer;
-  color: #0b0505;
-  font-family: Arial;
-  font-size: 16px;
-  padding: 5px 30px;
-  text-decoration: none;
+
+button:hover {
+	background-color: #AC5209;}
+
+.pris {font-weight: 700;
+text-decoration: underline;
+display: inline-block;}
+
+.d-flex {display: flex;}
+
+.textwidget p strong {color: white;}
+
+.fag {
+    border: 2px solid darkred;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: fit-content;}
+
+.trin {font-weight: bold;}
+
+@media (max-width: 900px) {
+      #footer {
+          text-align: center;
+        }
+	
+	.menu {
+	display: none;
 }
+
+        #content .container {
+          display: block;
+          gap: 2rem;
+          padding: 2rem;
+          margin: 2rem;
+          border-radius: 0.5rem;
+          background-color: #fff;
+        }
+	
+	.info_social {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+	}
+	
+	.kontakt {
+		grid-column: 2/3;
+		margin-top: 5rem;
+	}
+	
+	.verdensmol {
+		margin-bottom: 4rem;
+	}
+	
+	#indhold-filtrering {
+	margin-bottom: 4rem;
+	justify-content: center; 
+	display: none;
+    }
+	
+	#filtrering {
+	justify-content: center;
+	display: none;
+	}
+	
+	
+      }
+
+ @media (min-width: 1000px) {
+		  
+	 .grid_intro{
+		 display: grid;
+		 grid-template-columns: 1fr 1fr;
+		 gap: 1rem;
+		 
+	 }
+	 
+	 .p_grid {
+		 display: grid;
+		 grid-template-columns: 1fr 1fr;
+		 margin-top: 3rem;
+		 grid-gap: 1.5rem;
+		 gap: 1rem;
+	 }
+	 
+	 .booking {grid-area: 2/2;}
+	 
+	.kurser_single, .loop_container {
+    max-width: 1300px;
+    margin: auto;
+		padding: 0 1.5rem;}
+	
+	 
+	 .social_media h4 {
+		 margin-bottom: 0;
+	 }
+
+	 
+	 
+}
+
+@media (min-width: 900px) {
+		  
+		  
+        .nyhedsbrev {
+          display: flex;
+          flex-direction: column;
+          padding-top: 33px;
+          padding-left: 18%;
+        }
+
+        .info_social {
+          display: flex;
+          flex-direction: column;
+          padding-left: 27px;
+          padding-top: 27px;
+        }
+
+        #footer {
+          background-color: #325b5d;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+		  
+		  .verdensmol {
+			  grid-column: 2/3;
+			  grid-row: 1;
+			   padding-top: 33px;
+		  }
+		  
+		  .social_media {
+			  grid-column: 1/2;
+			  padding-left: 27px;
+		  }
+		  
+		  .nyhedsbrev {
+			   grid-column: 3/4;
+		  }
+		  
+      }
+

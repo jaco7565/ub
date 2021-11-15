@@ -4,12 +4,15 @@
 
 <template>
 	<article class="kurser">
-       <h4></h4>
+      <h4></h4>
           <img class="kursus_img" src="" alt="" />
           <p class="details"></p>
           <p class="pris"></p>
           <p class="trin"></p>
           <p class="fag"></p>
+		<button>
+			Læs mere
+		</button>
     </article>
 </template>
 
@@ -20,7 +23,10 @@
 
 <section id="nav_kursus"></section>
      
+  <section class="loop_container">
+		
 <section class="container"></section>
+		 </section>
 
 </div>
 
@@ -32,7 +38,7 @@ const kursusTemplate = document.querySelector("template");
 
 const url = "https://jk26.dk/kea/2_semester/tema9/ub/wp-json/wp/v2/kursus?per_page=100";
 
-const catUrl = "https://jk26.dk/kea/2_semester/tema9/ub/wp-json/wp/v2/categories?per_page=100";
+const catUrl = "https://jk26.dk/kea/2_semester/tema9/ub/wp-json/wp/v2/indhold?per_page=100";
 
 
 let kurser;
@@ -42,7 +48,8 @@ let filter = "alle";
 
 
 function start() {
-     getJson(url);
+     getJson();
+	console.log(url);
 }
 
 async function getJson() {
@@ -61,8 +68,9 @@ function visKurser() {
   container.textContent = ""; //Ryd container inden loop
     kurser.forEach((kursus) => {
 
-
-        if (kursus.categories.includes(10)) {
+console.log(kursus.indhold);
+		
+        if (kursus.indhold.includes(34)) {
 
         //Er filter det samme som objekt? || betyder eller
         //Bestemt kategori eller alle objekter
@@ -71,17 +79,18 @@ function visKurser() {
      
       //Placer i HTML
 
-      klon.querySelector("h4").textContent = kursus.title.rendered;
-      klon.querySelector(".details").textContent = kursus.beskrivelse;
-      klon.querySelector(".trin").textContent = kursus.trin;
-      klon.querySelector(".fag").textContent = kursus.fag;
-      klon.querySelector(".pris").textContent = kursus.pris + " kr.";
+      klon.querySelector("h4").innerHTML = kursus.title.rendered;
+      klon.querySelector(".details").innerHTML = kursus.loop_view_beskrivelse;
+      klon.querySelector(".trin").innerHTML = kursus.trin;
+      klon.querySelector(".fag").innerHTML = kursus.fag;
+      klon.querySelector(".pris").innerHTML = kursus.pris + " kr.";
       klon.querySelector("img").src = kursus.billede.guid;
       klon.querySelector(".kurser").addEventListener("click", () => {
         location.href = kursus.link;
+
       });
 
-      
+      //klon.querySelector("img").src = "faces/" + ret.billede;
       container.appendChild(klon); 
 
         }
